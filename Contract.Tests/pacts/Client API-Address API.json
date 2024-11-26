@@ -1,0 +1,141 @@
+{
+  "consumer": {
+    "name": "Client API"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to /address/customer-address?customerId={customerId}",
+      "providerStates": [
+        {
+          "name": "There is available data"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/address/customer-address",
+        "query": {
+          "customerId": [
+            "F4D610EC-36AF-407B-8F60-E0FBE6946D7B"
+          ]
+        }
+      },
+      "response": {
+        "body": {
+          "City": "city 1",
+          "StreetName": "street 1",
+          "StreetNumber": "1"
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A GET request to /address/customer-address?customerId={customerId}",
+      "providerStates": [
+        {
+          "name": "There is available data"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/address/customer-address",
+        "query": {
+          "customerId": [
+            "F4D610EC-36AF-407B-8F60-E0FBE6946D7B"
+          ]
+        }
+      },
+      "response": {
+        "body": {
+          "City": "city 1",
+          "StreetName": "street 1",
+          "StreetNumber": "1"
+        },
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A valid GET request to /address/customer-address?customerId={customerId}",
+      "providerStates": [
+        {
+          "name": "There is available data"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/address/customer-address",
+        "query": {
+          "customerId": [
+            "F4D610EC-36AF-407B-8F60-E0FBE6946D7B"
+          ]
+        }
+      },
+      "response": {
+        "body": "",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A valid GET request to /address/customer-address?customerId={customerId}",
+      "providerStates": [
+        {
+          "name": "There is available data"
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "path": "/address/customer-address",
+        "query": {
+          "customerId": [
+            "F4D610EC-36AF-407B-8F60-E0FBE6946D7B"
+          ]
+        }
+      },
+      "response": {
+        "body": "",
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "status": 200
+      }
+    },
+    {
+      "description": "A valid request to add new address",
+      "request": {
+        "body": {
+          "customerExternalId": "F4D610EC-36AF-407B-8F60-E0FBE6946D7B",
+          "streetName": "street 1",
+          "streetNumber": "1"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "method": "POST",
+        "path": "/address/address-create"
+      },
+      "response": {
+        "status": 400
+      }
+    }
+  ],
+  "metadata": {
+    "pactRust": {
+      "ffi": "0.4.23",
+      "models": "1.2.5"
+    },
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  },
+  "provider": {
+    "name": "Address API"
+  }
+}
