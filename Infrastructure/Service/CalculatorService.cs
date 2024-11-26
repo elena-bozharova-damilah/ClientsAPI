@@ -8,5 +8,20 @@ namespace Infrastructure.Service
         {
             return value1 + value2;
         }
+
+        public float Divide(int value1, int value2)
+        {
+            if (value2 == 0)
+            {
+                throw new Exception("Cannot divide by zero");
+            }
+
+            return value1 / value2;
+        }
+
+        public int Subtract(int value1, int value2)
+        {
+            return value1 - value2;
+        }
     }
 }
