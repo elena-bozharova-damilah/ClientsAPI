@@ -1,5 +1,4 @@
 using Application.Features.AddCustomer;
-using Application.Features.AddCustomerAddress;
 using Application.Features.GetCustomer;
 using Application.Features.GetCustomers;
 using MediatR;
@@ -39,13 +38,6 @@ namespace ClientsAPI.Controllers
         public async Task<ActionResult<GetCustomerResponse>> GetCustomer([FromRoute] int customerId)
         {
             return Ok(await _mediator.Send(new GetCustomerRequest(customerId)));
-        }
-
-        [HttpPost("add-customer-address")]
-        public async Task<ActionResult> AddCustomerAddress(AddCustomerAddressRequest request)
-        {
-            await _mediator.Send(request);
-            return Ok();
         }
     }
 }

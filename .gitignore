@@ -9,6 +9,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.sln.iml
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -143,6 +144,7 @@ _TeamCity*
 !.axoCover/settings.json
 
 # Coverlet is a free, cross platform Code Coverage Tool
+*.coverage
 coverage*.json
 coverage*.xml
 coverage*.info
@@ -361,3 +363,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+/ClientsAPI/Unit.Tests/coveragereport

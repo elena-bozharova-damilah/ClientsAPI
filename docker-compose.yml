@@ -1,0 +1,22 @@
+  version: '3.8'
+
+  services:
+    sqldata:
+      image: mcr.microsoft.com/mssql/server:2022-latest
+      container_name: sql-container
+      environment:
+        - MSSQL_SA_PASSWORD=Pass@word
+        - ACCEPT_EULA=Y
+      ports:
+        - "1435:1433"
+      networks:
+        - ol-network
+
+
+  networks:
+    ol-network:
+      name: ol-network
+
+  volumes:
+    localvolume:
+      driver: local

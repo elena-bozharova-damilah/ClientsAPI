@@ -16,6 +16,11 @@ public class Customer
 
     public Guid ExternalId { get; set; }
 
+    public Customer()
+    {
+
+    }
+
     private Customer(string forename, string surname, string email, string phone, DateTime dateOfJoining, DateTime dateOfBirth)
     {
         Forename = forename;
